@@ -20,7 +20,7 @@ html{
 
 .Pricing__Title{
     margin: 40px auto 40px;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .Pricing__Title h1 
@@ -34,23 +34,20 @@ html{
     margin: 0 auto;
 }
 
-.Plan
+.TypesOfPlan
 {
     display: flex;
     flex-direction: column;
-    font-weight: 500;
 }
 
-.Plan__Secoundary
+.Plan
 {
     background-color: gray;
     height: 450px;
     margin: 0px 20px 30px;
     display: flex;
     flex-direction: column;
-}
-.Plan__Secoundary p {
-    margin: 0 auto;
+    border-radius: 10px;
 }
 
 .Plan__Primary
@@ -60,4 +57,42 @@ html{
     margin: 0px 20px 30px;
     display: flex;
     flex-direction: column;
+}
+
+.Title
+{
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 20px auto;
+}
+
+.Price
+{
+    font-size: 4.8rem;
+    font-weight: 700;
+    margin: 0 auto 20px;
+}
+
+.Feature
+{
+    margin: 0 auto;
+    font-weight: 700;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+    font-size: 1.6rem;
+}
+
+.Feature--First
+{
+    border-top: 1px solid black;
+}
+
+.Button
+{
+    margin: 30px auto 0;
+    width: 80%;
+    padding: 5px 0;
+    font-weight: 700;
 }
