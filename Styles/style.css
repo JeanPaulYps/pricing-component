@@ -10,10 +10,92 @@ html{
     font-weight: 700;
     background-image: url(../Img/bg-top.svg);
     background-color: #f6f6fe;
-    background-position: -298% -4%;
+    background-position: calc(100% + 175px) -50px;
     background-repeat:no-repeat;
     
 }
+
+@media (max-width: 599px)
+{
+    .TypesOfPlan
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Plan
+    {
+        height: 450px;
+        margin: 0px 20px 30px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    .Feature p
+    {
+        font-size: 1.6rem;
+    }
+
+}
+
+@media (min-width: 600px)
+{
+    .TypesOfPlan
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0px 20px 30px;
+    }
+
+    .Plan
+    {
+        height: 450px;
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: white;
+    }
+    
+   
+}
+
+@media (min-width: 600px) and (max-width: 700px)
+{
+    .Feature
+    {
+        font-size:1.2rem;
+    }
+}
+
+@media (min-width: 699px)
+{
+    .Feature p
+    {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .TypesOfPlan
+    {
+        max-width: 1160px;
+        margin: 0 auto;
+    }
+    html
+    {
+        background-image: url(../Img/bg-top.svg), url(../Img/bg-bottom.svg);
+        background-color: #f6f6fe;
+        background-position: calc(100% + 175px) -50px, bottom left;
+        background-repeat:no-repeat;
+        
+    }
+}
+
 
 .Pricing
 {
@@ -43,20 +125,8 @@ html{
     color: #b3b5c6 ;
 }
 
-.TypesOfPlan
-{
-    display: flex;
-    flex-direction: column;
-}
 
-.Plan
-{
-    height: 450px;
-    margin: 0px 20px 30px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-}
+
 
 .Plan--Primary
 {
@@ -89,7 +159,6 @@ html{
     text-align: center;
     padding: 20px;
     width: 80%;
-    font-size: 1.6rem;
     color: #6d708d;
 }
 
@@ -190,4 +259,6 @@ html{
     transform: translateX(26px);
   }
   
+
+
   
