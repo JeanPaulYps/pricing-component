@@ -47,12 +47,12 @@ html{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        align-items: center;
         margin: 0px 20px 30px;
     }
 
     .Plan
     {
-        height: 450px;
         width: 33%;
         display: flex;
         flex-direction: column;
@@ -60,7 +60,13 @@ html{
         background-color: white;
     }
     
+    .Plan--Primary {
+        height: 500px;
+    }
    
+    .Plan--Secoundary {
+        height: 450px;
+    }
 }
 
 @media (min-width: 600px) and (max-width: 700px)
@@ -90,22 +96,22 @@ html{
     {
         background-image: url(../Img/bg-top.svg), url(../Img/bg-bottom.svg);
         background-color: #f6f6fe;
-        background-position: calc(100% + 175px) -50px, bottom left;
+        background-position: calc(100% + 175px) -50px, 0px calc(100vh - 300px);
         background-repeat:no-repeat;
         
     }
 }
 
-
 .Pricing
 {
     height: 200px;
-    margin: 50px 20px;
+    margin: 10px 20px;
     display: flex;
     flex-direction: column;
 }
 
-.Pricing__Title{
+.Pricing__Title
+{
     margin: 40px auto 40px;
     color: #494c5f;
 }
@@ -124,9 +130,6 @@ html{
     font-size: 1.6rem;
     color: #b3b5c6 ;
 }
-
-
-
 
 .Plan--Primary
 {
@@ -185,9 +188,21 @@ html{
 .Button--Primary
 {
     color: #696fdd;
+    background-color: whitesmoke;
+}
+
+.Button:hover
+{
+    opacity: 0.9;
+    cursor: pointer;
 }
 
 .GradientBackground
+{
+    background-image: linear-gradient(#a3a8f0, #696fdd);
+}
+
+.GradientBackground--ToRight 
 {
     background-image: linear-gradient(to right, #a3a8f0, #696fdd);
 }
@@ -195,7 +210,6 @@ html{
 .TimeBilling--Right
 {
     margin-left: 20px;
-
 }
 
 .TimeBilling--Left

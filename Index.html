@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Styles/style.css">
-    <link rel="stylesheet" href="">
     <link rel="shortcut icon" href="./Img/favicon-32x32.png" type="image/x-icon">
 </head>
 <body>
@@ -19,19 +18,19 @@
             <div class="Pricing__Toggle">
                 <span class="TimeBilling--Left" >Anually</span>
                 <label class="switch">  
-                    <input type="checkbox">
+                    <input type="checkbox" id="priceCheckbox">
                     <span class="slider"></span>
                 </label>
                 <span class="TimeBilling--Right">Monthly</span>
             </div>
         </div>
         <div class="TypesOfPlan">
-            <div class="Plan">
+            <div class="Plan Plan--Secoundary">
                 <div class ="Title">
                     <p>Basic</p>
                 </div>
                 <div class="Price">
-                    <p>$19.99</p>
+                    <p id="Basic">$19.99</p>
                 </div>
                 <div class="Feature Feature--First Feature--GBStorageLarger">
                     <p>500 GB Storage</p>
@@ -42,14 +41,14 @@
                 <div class="Feature ">
                     <p>Send up to 3 GB</p>
                 </div>
-                <button class="Button GradientBackground Button--Secoundary">LEARN MORE</button>
+                <button class="Button GradientBackground--ToRight Button--Secoundary">LEARN MORE</button>
             </div>
             <div class="Plan Plan--Primary GradientBackground">
                 <div class ="Title Feature--Primary">
                     <p>Professional</p>
                 </div>
                 <div class="Price Feature--Primary">
-                    <p>$24.99</p>
+                    <p id="Professional">$24.99</p>
                 </div>
                 <div class="Feature Feature--First Feature--Primary">
                     <p>1 TB Storage</p>
@@ -62,12 +61,12 @@
                 </div>
                 <button class="Button Button--Primary">LEARN MORE</button>
             </div>
-            <div class="Plan">
+            <div class="Plan Plan--Secoundary">
                 <div class ="Title">
                     <p>Master</p>
                 </div>
                 <div class="Price">
-                    <p>$39.99</p>
+                    <p id="Master">$39.99</p>
                 </div>
                 <div class="Feature Feature--First">
                     <p>2 TB Storage</p>
@@ -78,9 +77,10 @@
                 <div class="Feature Feature--GBSendUpLarger ">
                     <p>Send up to 20 GB</p>
                 </div>
-                <button class="Button GradientBackground Button--Secoundary">LEARN MORE</button>
+                <button class="Button GradientBackground--ToRight Button--Secoundary">LEARN MORE</button>
             </div>
         </div>
     </main>
+    <script src="handlePrice.js"></script>
 </body>
 </html>
